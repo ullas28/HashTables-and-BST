@@ -6,7 +6,7 @@ public class MyMapNode<T extends Comparable<T>> {
 
     ArrayList<LinkedList<T>> myHashTableList;
 
-    MyMapNode() {
+   public MyMapNode() {
         this.m = 10;
         this.myHashTableList = new ArrayList<LinkedList<T>>(m);
         for(int i=0;i<m;i++){
@@ -43,6 +43,16 @@ public class MyMapNode<T extends Comparable<T>> {
                 ll.showLinkedList();
             }
         }
+    }
+    //Methode to Remove Key
+    public void removeKey(int index,T word) {
+        if(myHashTableList.contains(index)) {
+            LinkedList linkedList = myHashTableList.get(index);
+            linkedList.removeNode(word);
+        } else {
+            System.out.println("No Key Match with Given Word.");
+        }
+
     }
 
 
