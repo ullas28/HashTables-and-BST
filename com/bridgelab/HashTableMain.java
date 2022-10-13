@@ -1,4 +1,5 @@
-/*Ability to find frequency of words in a sentence like “To be or not to be”
+/*Ability to find frequency of words in a sentence like ““Paranoids are not paranoid because they are paranoid
+ butbecause they keep putting themselves deliberately into paranoid avoidable situations””
 - Use LinkedList to do the Hash Table Operation
 - To do this we create MyMapNode with Key Value Pair and create LinkedList of MyMapNode*/
 
@@ -9,11 +10,9 @@ public class HashTableMain {
         //HashTableExp Object for Generic Type
         MyMapNode<String> myMapNode = new MyMapNode<>();
 
-        String str = "to be or not to be";
+        String str = "Paranoids are not paranoid because they are paranoid but because they keep putting themselves deliberately into paranoid avoidable situations";
 
         String strArr[] = str.split(" ");
-
-        //Integer strArr[] ={1,6,9,3,7,1,9,6,3,9};
 
         //System.out.println("Given String ="+str);
         //Passing Array Element in HashTable Index

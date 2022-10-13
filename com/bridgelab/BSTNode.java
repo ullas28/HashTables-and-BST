@@ -1,7 +1,5 @@
-/*Ability to create a BST by adding 56 and then
-adding 30 & 70 - Use INode to create My Binary Node - Note the key has to extend comparable to
-compare and determine left or right node - First add 56 as root node so 30 will be
-added to left and 70 to right*/
+/*Ability to create the binary tree shown in the figure - Check if all are added with using size
+method in Binary Tree*/
 
 package com.bridgelab;
 
@@ -52,8 +50,20 @@ class BinaryTreeDemo {
         System.out.println("Building binaryTreeDemo with root value " + root.value);
         binaryTreeDemo.insert(root, 30);
         binaryTreeDemo.insert(root, 70);
+        binaryTreeDemo.insert(root,22);
+        binaryTreeDemo.insert(root,40);
+        binaryTreeDemo.insert(root,11);
+        binaryTreeDemo.insert(root,16);
+        binaryTreeDemo.insert(root,3);
+        binaryTreeDemo.insert(root,60);
+        binaryTreeDemo.insert(root,95);
+        binaryTreeDemo.insert(root,65);
+        binaryTreeDemo.insert(root,63);
+        binaryTreeDemo.insert(root,67);
+
         System.out.println("Traversing binaryTreeDemo in order");
         binaryTreeDemo.traverseInOrder(root);
+
 
     }
 }
